@@ -7,37 +7,22 @@ importance: 1
 category: work
 ---
 
-<style>
-  /* Forza nero/grigio scuro leggibile per autori, affiliazioni e note */
-  .author-list, .author-list a, .author-list strong {
-    color: #0056b3 !important; /* Blu per i link autori */
-    font-size: 1.15rem;
-  }
-  
-  .affiliations, .affiliations *, .affiliations small, sup {
-    color: #222222 !important; /* Nero/grigio scuro leggibile per affiliazioni */
-    opacity: 1 !important;     /* Rimuove l'effetto trasparente/sbiadito */
-  }
-
-  .author-container {
-    margin-top: 1.5rem;
-    margin-bottom: 2rem;
-  }
-</style>
-
-<div class="author-container text-center">
-  <div class="author-list">
-    <a href="https://enzhezhao.github.io/"><strong>Enzhe Zhao</strong></a><sup>1,*</sup>, 
-    <a href="https://marcofiorucci.github.io/"><strong>Marco Fiorucci</strong></a><sup>1,*</sup>, 
-    <a href="https://www.math.unipd.it/~ballan/"><strong>Lamberto Ballan</strong></a><sup>1</sup>
+<div class="text-center my-4">
+  <!-- Autori -->
+  <div style="font-size: 1.2rem; font-weight: 600; color: #000000 !important; margin-bottom: 0.5rem;">
+    <a href="https://enzhezhao.github.io/" style="color: #000000 !important; text-decoration: none;">Enzhe Zhao</a><sup style="color: #000000 !important;">1,*</sup>, 
+    <a href="https://marcofiorucci.github.io/" style="color: #000000 !important; text-decoration: none;">Marco Fiorucci</a><sup style="color: #000000 !important;">1,*</sup>, 
+    <a href="https://www.math.unipd.it/~ballan/" style="color: #000000 !important; text-decoration: none;">Lamberto Ballan</a><sup style="color: #000000 !important;">1</sup>
   </div>
 
-  <div class="affiliations mt-2">
-    <sup>1</sup> University of Padua &nbsp;&nbsp;&nbsp; <sup>2</sup> Harbin Institute of Technology<br>
-    <small><sup>*</sup> Equal contribution</small>
+  <!-- Affiliazioni e nota -->
+  <div style="font-size: 1rem; color: #111111 !important; opacity: 1 !important; line-height: 1.5;">
+    <span style="color: #111111 !important; opacity: 1 !important;"><sup>1</sup> University of Padua &nbsp;&nbsp;&nbsp; <sup>2</sup> Harbin Institute of Technology</span><br>
+    <small style="color: #333333 !important; opacity: 1 !important;"><sup>*</sup> Equal contribution</small>
   </div>
 
-  <div class="mt-3 font-weight-bold" style="color: #000000 !important; font-size: 1.1rem;">
+  <!-- Conference -->
+  <div style="font-size: 1.1rem; font-weight: bold; color: #000000 !important; margin-top: 1rem;">
     NeurIPS 2026
   </div>
 </div>
@@ -73,3 +58,9 @@ Overview of the RankAlign framework architecture and representation alignment pi
   booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
   year={2026}
 }
+eof
+git add _projects/rankalign.md
+git commit -m "Fix inline styling for authors and affiliations to force high contrast"
+git push origin main
+
+EOFù
