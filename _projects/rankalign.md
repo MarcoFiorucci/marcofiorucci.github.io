@@ -8,33 +8,38 @@ category: work
 ---
 
 <style>
-  /* Forza i link dell'autore e il testo del titolo in nero puro */
-  body.light .post h1.post-title,
-  body.light .post a {
-    color: #000000 !important;
+  /* Forza nero/grigio scuro leggibile per autori, affiliazioni e note */
+  .author-list, .author-list a, .author-list strong {
+    color: #0056b3 !important; /* Blu per i link autori */
+    font-size: 1.15rem;
   }
   
-  /* Stili aggiuntivi per l'area degli autori */
-  .author-list {
-    font-size: 1.15rem;
-    margin: 1rem 0 0.5rem 0;
+  .affiliations, .affiliations *, .affiliations small, sup {
+    color: #222222 !important; /* Nero/grigio scuro leggibile per affiliazioni */
+    opacity: 1 !important;     /* Rimuove l'effetto trasparente/sbiadito */
   }
-  .affiliations {
-    color: #555; /* Un grigio scuro per le affiliazioni per contrasto */
-    font-size: 0.95rem;
+
+  .author-container {
+    margin-top: 1.5rem;
     margin-bottom: 2rem;
   }
 </style>
 
-<div class="author-list text-center">
-  <a href="https://enzhezhao.github.io/"><strong>Enzhe Zhao</strong></a><sup>*</sup>, 
-  <a href="https://marcofiorucci.github.io/"><strong>Marco Fiorucci</strong></a><sup>*</sup>, 
-  <a href="https://www.math.unipd.it/~ballan/"><strong>Lamberto Ballan</strong></a>
-</div>
+<div class="author-container text-center">
+  <div class="author-list">
+    <a href="https://enzhezhao.github.io/"><strong>Enzhe Zhao</strong></a><sup>1,*</sup>, 
+    <a href="https://marcofiorucci.github.io/"><strong>Marco Fiorucci</strong></a><sup>1,*</sup>, 
+    <a href="https://www.math.unipd.it/~ballan/"><strong>Lamberto Ballan</strong></a><sup>1</sup>
+  </div>
 
-<div class="affiliations text-center">
-  University of Padua, Italy<br>
-  <small><sup>*</sup> Equal contribution</small>
+  <div class="affiliations mt-2">
+    <sup>1</sup> University of Padua &nbsp;&nbsp;&nbsp; <sup>2</sup> Harbin Institute of Technology<br>
+    <small><sup>*</sup> Equal contribution</small>
+  </div>
+
+  <div class="mt-3 font-weight-bold" style="color: #000000 !important; font-size: 1.1rem;">
+    NeurIPS 2026
+  </div>
 </div>
 
 ## Abstract
