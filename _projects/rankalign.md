@@ -9,20 +9,21 @@ category: work
 
 <div class="text-center my-4">
   <!-- Autori -->
-  <div style="font-size: 1.2rem; font-weight: 600; color: #000000 !important; margin-bottom: 0.5rem;">
-    <a href="https://enzhezhao.github.io/" style="color: #000000 !important; text-decoration: none;">Enzhe Zhao</a><sup style="color: #000000 !important;">1,*</sup>, 
-    <a href="https://marcofiorucci.github.io/" style="color: #000000 !important; text-decoration: none;">Marco Fiorucci</a><sup style="color: #000000 !important;">1,*</sup>, 
-    <a href="https://www.math.unipd.it/~ballan/" style="color: #000000 !important; text-decoration: none;">Lamberto Ballan</a><sup style="color: #000000 !important;">1</sup>
+  <div class="h5 fw-bold text-dark mb-2">
+    <span>Enzhe Zhao</span><sup class="text-dark">1,*</sup>, 
+    <span>Marco Fiorucci</span><sup class="text-dark">1,*</sup>, 
+    <span>Lamberto Ballan</span><sup class="text-dark">1</sup>
   </div>
 
   <!-- Affiliazioni e nota -->
-  <div style="font-size: 1rem; color: #111111 !important; opacity: 1 !important; line-height: 1.5;">
-    <span style="color: #111111 !important; opacity: 1 !important;"><sup>1</sup> University of Padua &nbsp;&nbsp;&nbsp; <sup>2</sup> Harbin Institute of Technology</span><br>
-    <small style="color: #333333 !important; opacity: 1 !important;"><sup>*</sup> Equal contribution</small>
+  <div class="text-dark fw-normal opacity-100 mb-2" style="font-size: 1rem; color: #000000 !important;">
+    <sup>1</sup> University of Padua &nbsp;&nbsp;&nbsp; <sup>2</sup> Harbin Institute of Technology
+    <br>
+    <small class="text-dark fw-normal" style="color: #000000 !important;"><sup>*</sup> Equal contribution</small>
   </div>
 
   <!-- Conference -->
-  <div style="font-size: 1.1rem; font-weight: bold; color: #000000 !important; margin-top: 1rem;">
+  <div class="h6 fw-bold text-dark mt-3">
     NeurIPS 2026
   </div>
 </div>
@@ -58,9 +59,3 @@ Overview of the RankAlign framework architecture and representation alignment pi
   booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
   year={2026}
 }
-eof
-git add _projects/rankalign.md
-git commit -m "Fix inline styling for authors and affiliations to force high contrast"
-git push origin main
-
-EOFù
