@@ -59,21 +59,20 @@ div.publication-authors .author-block a:hover {
   text-decoration: underline !important;
 }
 
-/* Equal contribution leggero, senza grassetto e con il simbolo */
 div.publication-equal-contrib {
   text-align: center !important;
   font-size: 0.95rem !important;
-  color: #555555 !important;
+  color: #111111 !important;
   margin-bottom: 1rem !important;
-  font-weight: 400 !important;
+  font-weight: 500 !important;
 }
 
 div.publication-affiliations {
   text-align: center !important;
   font-size: 1.05rem !important;
-  color: #444444 !important;
+  color: #111111 !important;
   margin-bottom: 1rem !important;
-  font-weight: 400 !important;
+  font-weight: 500 !important;
 }
 
 div.publication-affiliations .affiliation-block {
@@ -135,10 +134,11 @@ div.publication-teaser img {
 
 div.publication-teaser figcaption {
   font-size: 0.9rem !important;
-  color: #555555 !important;
+  color: #333333 !important;
   margin-top: 0.75rem !important;
   text-align: justify !important;
   padding: 0 10px !important;
+  font-weight: 400 !important;
 }
 
 h2.section-title {
@@ -188,18 +188,18 @@ hr.publication-divider {
   <h1 class="publication-title">RankAlign: Vision-Language Representation Alignment via Rank Transformation</h1>
 
   <div class="publication-authors">
-    <span class="author-block"><a href="#">Enzhe Zhao</a><sup>2,*</sup></span>
-    <span class="author-block"><a href="#">Marco Fiorucci</a><sup>1,*</sup></span>
-    <span class="author-block"><a href="#">Lamberto Ballan</a><sup>1</sup></span>
+    <span class="author-block"><a href="#" style="color: #0088cc !important;">Enzhe Zhao</a><sup style="color: #111111 !important;">2,*</sup></span>
+    <span class="author-block"><a href="#" style="color: #0088cc !important;">Marco Fiorucci</a><sup style="color: #111111 !important;">1,*</sup></span>
+    <span class="author-block"><a href="#" style="color: #0088cc !important;">Lamberto Ballan</a><sup style="color: #111111 !important;">1</sup></span>
   </div>
 
   <div class="publication-equal-contrib">
-    <span><sup>*</sup>equal contribution</span>
+    <span style="color: #111111 !important;"><sup style="color: #111111 !important;">*</sup>equal contribution</span>
   </div>
 
   <div class="publication-affiliations">
-    <span class="affiliation-block"><sup>1</sup> University of Padova</span>
-    <span class="affiliation-block"><sup>2</sup> Harbin Institute of Technology</span>
+    <span class="affiliation-block" style="color: #111111 !important;"><sup style="color: #111111 !important;">1</sup> University of Padova</span>
+    <span class="affiliation-block" style="color: #111111 !important;"><sup style="color: #111111 !important;">2</sup> Harbin Institute of Technology</span>
   </div>
 
   <div class="publication-venue">
