@@ -3,7 +3,6 @@ layout: default
 title: "RankAlign"
 description: ""
 permalink: /rankalign/
-img: 
 importance: 1
 category: work
 ---
@@ -44,6 +43,7 @@ div.publication-authors {
   font-size: 1.15rem !important;
   font-weight: 500 !important;
   margin-bottom: 0.3rem !important;
+  color: #111111 !important;
 }
 
 div.publication-authors .author-block {
@@ -52,7 +52,7 @@ div.publication-authors .author-block {
 }
 
 div.publication-authors .author-block a {
-  color: #0088cc !important;
+  color: #0066cc !important;
   text-decoration: none !important;
 }
 
@@ -79,12 +79,13 @@ div.publication-affiliations {
 div.publication-affiliations .affiliation-block {
   display: inline-block !important;
   margin: 0 8px !important;
+  color: #111111 !important;
 }
 
 div.publication-venue {
   text-align: center !important;
   font-size: 1.15rem !important;
-  color: #333333 !important;
+  color: #111111 !important;
   font-weight: 600 !important;
   margin-bottom: 2rem !important;
 }
@@ -189,9 +190,9 @@ hr.publication-divider {
   <h1 class="publication-title">RankAlign: Vision-Language Representation Alignment via Rank Transformation</h1>
 
   <div class="publication-authors">
-    <span class="author-block"><a href="#" style="color: #0088cc !important;">Enzhe Zhao</a><sup style="color: #111111 !important;">2,*</sup></span>
-    <span class="author-block"><a href="#" style="color: #0088cc !important;">Marco Fiorucci</a><sup style="color: #111111 !important;">1,*</sup></span>
-    <span class="author-block"><a href="#" style="color: #0088cc !important;">Lamberto Ballan</a><sup style="color: #111111 !important;">1</sup></span>
+    <span class="author-block"><a href="#">Enzhe Zhao</a><sup style="color: #111111 !important;">2,*</sup></span>
+    <span class="author-block"><a href="#">Marco Fiorucci</a><sup style="color: #111111 !important;">1,*</sup></span>
+    <span class="author-block"><a href="#">Lamberto Ballan</a><sup style="color: #111111 !important;">1</sup></span>
   </div>
 
   <div class="publication-equal-contrib">
@@ -199,8 +200,8 @@ hr.publication-divider {
   </div>
 
   <div class="publication-affiliations">
-    <span class="affiliation-block" style="color: #111111 !important;"><sup style="color: #111111 !important;">1</sup> University of Padova</span>
-    <span class="affiliation-block" style="color: #111111 !important;"><sup style="color: #111111 !important;">2</sup> Harbin Institute of Technology</span>
+    <span class="affiliation-block"><sup style="color: #111111 !important;">1</sup> University of Padova</span>
+    <span class="affiliation-block"><sup style="color: #111111 !important;">2</sup> Harbin Institute of Technology</span>
   </div>
 
   <div class="publication-venue">
