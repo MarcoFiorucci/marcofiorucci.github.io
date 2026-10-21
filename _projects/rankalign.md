@@ -1,9 +1,3 @@
-# 1. Puliamo la cartella sperimentale root e il file .nojekyll
-git rm -rf rankalign .nojekyll 2>/dev/null || true
-mkdir -p _projects
-
-# 2. Creiamo il file di progetto nativo per al-folio
-cat << 'EOF' > _projects/rankalign.md
 ---
 layout: page
 title: "RankAlign: Vision-Language Representation Alignment via Rank Transformation"
@@ -14,22 +8,28 @@ category: work
 ---
 
 <style>
-  /* Stili opzionali per massima leggibilità */
+  /* Forza i link dell'autore e il testo del titolo in nero puro */
+  body.light .post h1.post-title,
+  body.light .post a {
+    color: #000000 !important;
+  }
+  
+  /* Stili aggiuntivi per l'area degli autori */
   .author-list {
     font-size: 1.15rem;
     margin: 1rem 0 0.5rem 0;
   }
   .affiliations {
-    color: #555;
+    color: #555; /* Un grigio scuro per le affiliazioni per contrasto */
     font-size: 0.95rem;
     margin-bottom: 2rem;
   }
 </style>
 
 <div class="author-list text-center">
-  <strong>Enzhe Zhao</strong><sup>*</sup>, 
-  <strong>Marco Fiorucci</strong><sup>*</sup>, 
-  <strong>Lamberto Ballan</strong>
+  <a href="https://enzhezhao.github.io/"><strong>Enzhe Zhao</strong></a><sup>*</sup>, 
+  <a href="https://marcofiorucci.github.io/"><strong>Marco Fiorucci</strong></a><sup>*</sup>, 
+  <a href="https://www.math.unipd.it/~ballan/"><strong>Lamberto Ballan</strong></a>
 </div>
 
 <div class="affiliations text-center">
@@ -68,5 +68,3 @@ Overview of the RankAlign framework architecture and representation alignment pi
   booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
   year={2026}
 }
-
-
