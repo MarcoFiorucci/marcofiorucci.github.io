@@ -7,6 +7,14 @@ importance: 1
 category: work
 ---
 
+<script>
+  // Forza in modo permanente la modalità chiara su questa pagina
+  localStorage.setItem('theme', 'light');
+  document.documentElement.setAttribute('data-theme', 'light');
+  document.body.classList.remove('dark');
+  document.body.classList.add('light');
+</script>
+
 <div style="text-align: center; margin-top: 1rem; margin-bottom: 2rem;">
   <p style="font-size: 1.15rem; font-weight: 600; color: #000000 !important; margin-bottom: 0.5rem;">
     Enzhe Zhao<sup>1,*</sup>, &nbsp;
