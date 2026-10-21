@@ -2,6 +2,7 @@
 layout: default
 title: "RankAlign"
 description: ""
+permalink: /rankalign/
 img: 
 importance: 1
 category: work
