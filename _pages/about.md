@@ -66,7 +66,7 @@ As a member of the <a href="http://vimp.math.unipd.it/" target="_blank">Visual I
   h1, h2, h3, h4, .navbar-brand {
     font-family: 'Lora', Georgia, serif !important;
   }
-
+  
   /* Personalizzazione foto profilo con angoli arrotondati */
   .profile img {
     max-width: 235px !important;
