@@ -7,26 +7,15 @@ importance: 1
 category: work
 ---
 
-<div class="text-center my-4">
-  <!-- Autori -->
-  <div class="h5 fw-bold text-dark mb-2">
-    <span>Enzhe Zhao</span><sup class="text-dark">1,*</sup>, 
-    <span>Marco Fiorucci</span><sup class="text-dark">1,*</sup>, 
-    <span>Lamberto Ballan</span><sup class="text-dark">1</sup>
-  </div>
+| **Enzhe Zhao**<sup>1,*</sup> | **Marco Fiorucci**<sup>1,*</sup> | **Lamberto Ballan**<sup>1</sup> |
+| :---: | :---: | :---: |
 
-  <!-- Affiliazioni e nota -->
-  <div class="text-dark fw-normal opacity-100 mb-2" style="font-size: 1rem; color: #000000 !important;">
-    <sup>1</sup> University of Padua &nbsp;&nbsp;&nbsp; <sup>2</sup> Harbin Institute of Technology
-    <br>
-    <small class="text-dark fw-normal" style="color: #000000 !important;"><sup>*</sup> Equal contribution</small>
-  </div>
+<p text-align="center">
+  <sup>1</sup> <strong>University of Padua</strong> &nbsp;&nbsp;&nbsp;&nbsp; <sup>2</sup> <strong>Harbin Institute of Technology</strong><br>
+  <small><sup>*</sup> Equal contribution &nbsp;|&nbsp; <strong>NeurIPS 2026</strong></small>
+</p>
 
-  <!-- Conference -->
-  <div class="h6 fw-bold text-dark mt-3">
-    NeurIPS 2026
-  </div>
-</div>
+---
 
 ## Abstract
 
