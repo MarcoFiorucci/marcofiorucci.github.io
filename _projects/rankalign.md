@@ -7,15 +7,19 @@ importance: 1
 category: work
 ---
 
-| **Enzhe Zhao**<sup>1,*</sup> | **Marco Fiorucci**<sup>1,*</sup> | **Lamberto Ballan**<sup>1</sup> |
-| :---: | :---: | :---: |
-
-<p text-align="center">
-  <sup>1</sup> <strong>University of Padua</strong> &nbsp;&nbsp;&nbsp;&nbsp; <sup>2</sup> <strong>Harbin Institute of Technology</strong><br>
-  <small><sup>*</sup> Equal contribution &nbsp;|&nbsp; <strong>NeurIPS 2026</strong></small>
-</p>
-
----
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 2rem;">
+  <p style="font-size: 1.15rem; font-weight: 600; color: #000000 !important; margin-bottom: 0.5rem;">
+    Enzhe Zhao<sup>1,*</sup>, &nbsp;
+    Marco Fiorucci<sup>1,*</sup>, &nbsp;
+    Lamberto Ballan<sup>1</sup>
+  </p>
+  <p style="font-size: 1rem; color: #000000 !important; margin-bottom: 0.3rem;">
+    <sup>1</sup> University of Padua &nbsp;&nbsp;&nbsp;&nbsp; <sup>2</sup> Harbin Institute of Technology
+  </p>
+  <p style="font-size: 0.9rem; color: #000000 !important;">
+    <sup>*</sup> Equal contribution &nbsp;|&nbsp; <strong>NeurIPS 2026</strong>
+  </p>
+</div>
 
 ## Abstract
 
