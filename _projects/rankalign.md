@@ -48,7 +48,7 @@ Overview of the RankAlign framework architecture and representation alignment pi
 
 ## Resources
 
-* [**Paper (arXiv)**](https://arxiv.org/)
+* [**Paper (arXiv)**](https://arxiv.org/abs/2610.31145)
 * [**Code (GitHub)**](https://github.com/marcofiorucci)
 
 ## Citation
