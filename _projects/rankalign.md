@@ -5,7 +5,6 @@ description: "Vision-Language Representation Alignment via Rank Transformation (
 img: assets/img/rankalign/pipeline.png
 importance: 1
 category: work
-arxiv: 2610.31145
 ---
 
 <style>
