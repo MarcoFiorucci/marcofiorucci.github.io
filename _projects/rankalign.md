@@ -5,7 +5,7 @@ description: "Vision-Language Representation Alignment via Rank Transformation (
 img: assets/img/rankalign/pipeline.png
 importance: 1
 category: work
----
+--- 
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
@@ -266,7 +266,7 @@ h3.ra-subtitle {
 }
 </style>
 
-<div class="publication-page">
+<div class="publication-page" markdown="1">
 
   <h1 class="publication-title">RankAlign: Vision-Language Representation Alignment via Rank Transformation</h1>
 
