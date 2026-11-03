@@ -5,59 +5,399 @@ description: "Vision-Language Representation Alignment via Rank Transformation (
 img: assets/img/rankalign/pipeline.png
 importance: 1
 category: work
-
+arxiv: 2610.31145
 ---
 
-<script>
-  // Forza in modo permanente la modalità chiara su questa pagina
-  localStorage.setItem('theme', 'light');
-  document.documentElement.setAttribute('data-theme', 'light');
-  document.body.classList.remove('dark');
-  document.body.classList.add('light');
-</script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-<div style="text-align: center; margin-top: 1rem; margin-bottom: 2rem;">
-  <p style="font-size: 1.15rem; font-weight: 600; color: #000000 !important; margin-bottom: 0.5rem;">
-    Enzhe Zhao<sup>2,*</sup>, &nbsp;
-    Marco Fiorucci<sup>1,*</sup>, &nbsp;
-    Lamberto Ballan<sup>1</sup>
-  </p>
-  <p style="font-size: 1rem; color: #000000 !important; margin-bottom: 0.3rem;">
-    <sup>1</sup> University of Padua &nbsp;&nbsp;&nbsp;&nbsp; <sup>2</sup> Harbin Institute of Technology
-  </p>
-  <p style="font-size: 0.9rem; color: #000000 !important;">
-    <sup>*</sup> Equal contribution &nbsp;|&nbsp; <strong>NeurIPS 2026</strong>
-  </p>
-</div>
+.post-header, .post-title, .post-description {
+  display: none !important;
+}
 
-## Abstract
+html, body, body.dark, html[data-theme="dark"] {
+  background-color: #ffffff !important;
+  color: #222222 !important;
+}
 
-While the Platonic Representation Hypothesis posits that vision and language models converge toward compatible latent geometries, recovering class-level correspondences between unpaired modalities without cross-modal supervision remains challenging. Existing relational matching methods compare within-modality similarity kernels directly, although the same semantic structure may be represented through different numerical parameterizations across modalities. We propose **RankAlign**, a rank-based normalization strategy for class-level unpaired vision-language matching. RankAlign transforms each within-modality similarity kernel into an ordinal relational representation before permutation matching, while leaving the correspondence space and matching solver unchanged. The resulting representation is invariant to strictly increasing reparameterizations of similarity values while preserving the ordinal structure used for matching. We provide exact-recovery and stability guarantees that characterize correspondence recovery under both exact and partial ordinal agreement. Experiments across diverse frozen vision and language encoders and multiple datasets demonstrate improved and more stable class-level correspondence recovery, including under label corruption and domain shift.
+div.publication-page {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  max-width: 900px !important;
+  margin: 3rem auto !important;
+  padding: 2rem !important;
+  background-color: #ffffff !important;
+  color: #222222 !important;
+}
 
-## Overview
+h1.publication-title {
+  font-size: 2.3rem !important;
+  font-weight: 700 !important;
+  text-align: center !important;
+  line-height: 1.25 !important;
+  margin-bottom: 1.8rem !important;
+  color: #111111 !important;
+  letter-spacing: -0.02em;
+}
 
-Overview of the RankAlign framework architecture and representation alignment pipeline.
+div.publication-authors {
+  text-align: center !important;
+  font-size: 1.15rem !important;
+  font-weight: 500 !important;
+  margin-bottom: 0.3rem !important;
+  color: #111111 !important;
+}
 
-<div class="row justify-content-sm-center my-4">
-  <div class="col-sm-10 text-center">
-    {% include figure.liquid path="assets/img/rankalign/pipeline.png" title="RankAlign Pipeline Overview" class="img-fluid rounded z-depth-1" %}
+div.publication-authors .author-block {
+  display: inline-block !important;
+  margin: 0 8px !important;
+}
+
+div.publication-authors .author-block a {
+  color: #0066cc !important;
+  text-decoration: none !important;
+}
+
+div.publication-authors .author-block a:hover {
+  text-decoration: underline !important;
+}
+
+div.publication-equal-contrib {
+  text-align: center !important;
+  font-size: 0.95rem !important;
+  color: #111111 !important;
+  margin-bottom: 1rem !important;
+  font-weight: 500 !important;
+}
+
+div.publication-affiliations {
+  text-align: center !important;
+  font-size: 1.05rem !important;
+  color: #111111 !important;
+  margin-bottom: 1rem !important;
+  font-weight: 500 !important;
+}
+
+div.publication-affiliations .affiliation-block {
+  display: inline-block !important;
+  margin: 0 8px !important;
+  color: #111111 !important;
+}
+
+div.publication-venue {
+  text-align: center !important;
+  font-size: 1.15rem !important;
+  color: #111111 !important;
+  font-weight: 600 !important;
+  margin-bottom: 2rem !important;
+}
+
+div.publication-links {
+  display: flex !important;
+  justify-content: center !important;
+  gap: 12px !important;
+  flex-wrap: wrap !important;
+  margin-bottom: 2.5rem !important;
+}
+
+div.publication-links .link-block .button {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 8px 18px !important;
+  border-radius: 20px !important;
+  background-color: rgba(0, 0, 0, 0.04) !important;
+  border: 1px solid rgba(0, 0, 0, 0.15) !important;
+  color: #333333 !important;
+  font-size: 0.9rem !important;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+}
+
+div.publication-links .link-block .button:hover {
+  background-color: rgba(0, 0, 0, 0.08) !important;
+  border-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+div.publication-teaser {
+  text-align: center !important;
+  margin-bottom: 2.5rem !important;
+  width: 100% !important;
+}
+
+div.publication-teaser img {
+  width: 110% !important;
+  max-width: 1050px !important;
+  height: auto !important;
+  border-radius: 8px !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  display: block !important;
+  margin-left: -5% !important;
+}
+
+div.publication-teaser figcaption {
+  font-size: 0.9rem !important;
+  color: #333333 !important;
+  margin-top: 0.75rem !important;
+  text-align: justify !important;
+  padding: 0 10px !important;
+  font-weight: 400 !important;
+}
+
+h2.section-title {
+  text-align: left !important;
+  font-size: 1.9rem !important;
+  font-weight: 600 !important;
+  margin-top: 2.5rem !important;
+  margin-bottom: 1rem !important;
+  color: #111111 !important;
+}
+
+div.abstract-content {
+  text-align: left !important;
+  text-wrap: pretty;
+  font-size: 1.02rem !important;
+  line-height: 1.7 !important;
+  color: #333333 !important;
+}
+
+div.bibtex-box {
+  background-color: rgba(0, 0, 0, 0.03) !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  border-radius: 8px !important;
+  padding: 16px 20px !important;
+  margin-top: 1rem !important;
+}
+
+pre.bibtex-code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace !important;
+  font-size: 0.85rem !important;
+  color: #a31515 !important;
+  white-space: pre-wrap !important;
+  word-break: break-word !important;
+  margin: 0 !important;
+  background: transparent !important;
+}
+
+hr.publication-divider {
+  border: 0 !important;
+  height: 1px !important;
+  background: rgba(0, 0, 0, 0.1) !important;
+  margin: 2.5rem 0 !important;
+}
+
+div.abstract-content p {
+  margin-bottom: 0.9rem !important;
+}
+
+div.abstract-content ul {
+  margin: 0.5rem 0 0.5rem 1.2rem !important;
+}
+
+div.ra-figure-row {
+  display: flex !important;
+  gap: 12px !important;
+  margin: 1.5rem 0 0.75rem !important;
+}
+
+div.ra-figure-row img {
+  width: 50% !important;
+  height: auto !important;
+}
+
+div.ra-caption {
+  font-size: 0.9rem !important;
+  color: #555555 !important;
+  text-align: center !important;
+  margin-bottom: 2rem !important;
+}
+
+table.ra-table {
+  margin: 1rem auto 1.5rem !important;
+  border-collapse: collapse !important;
+  font-size: 0.95rem !important;
+  color: #222222 !important;
+}
+
+table.ra-table th,
+table.ra-table td {
+  padding: 6px 18px !important;
+  text-align: center !important;
+  border: none !important;
+  background: transparent !important;
+}
+
+table.ra-table thead tr {
+  border-top: 2px solid #222222 !important;
+  border-bottom: 1px solid #222222 !important;
+}
+
+table.ra-table tbody tr:last-child {
+  border-bottom: 2px solid #222222 !important;
+}
+
+table.ra-table tbody tr:nth-child(2n+1) td {
+  border-top: 1px solid rgba(0, 0, 0, 0.12) !important;
+}
+
+table.ra-table tbody tr:first-child td {
+  border-top: none !important;
+}
+
+table.ra-table tr:hover,
+table.ra-table tr:hover td {
+  background: transparent !important;
+  color: #222222 !important;
+}
+
+@media (max-width: 640px) {
+  div.ra-figure-row { flex-direction: column !important; }
+  div.ra-figure-row img { width: 100% !important; }
+  table.ra-table th, table.ra-table td { padding: 5px 8px !important; }
+}
+
+div.abstract-content li { margin-bottom: 0.4rem !important; text-wrap: pretty; }
+
+h3.ra-subtitle {
+  font-size: 1.15rem !important;
+  font-weight: 600 !important;
+  color: #111111 !important;
+  margin-top: 1.2rem !important;
+  margin-bottom: 0.5rem !important;
+}
+</style>
+
+<div class="publication-page">
+
+  <h1 class="publication-title">RankAlign: Vision-Language Representation Alignment via Rank Transformation</h1>
+
+  <div class="publication-authors">
+    <span class="author-block"><a href="#">Enzhe Zhao</a><sup style="color: #111111 !important;">2,*</sup></span>
+    <span class="author-block"><a href="#">Marco Fiorucci</a><sup style="color: #111111 !important;">1,*</sup></span>
+    <span class="author-block"><a href="#">Lamberto Ballan</a><sup style="color: #111111 !important;">1</sup></span>
   </div>
-</div>
-<div class="caption text-center">
-  <strong>Figure 1:</strong> RankAlign framework for Vision-Language Representation Alignment via Rank Transformation.
-</div>
 
-## Resources
+  <div class="publication-equal-contrib">
+    <span style="color: #111111 !important;"><sup style="color: #111111 !important;">*</sup>equal contribution</span>
+  </div>
 
-* [**Paper (arXiv)**](https://arxiv.org/abs/2610.31145)
-* [**Code (GitHub)**](https://github.com/marcofiorucci)
+  <div class="publication-affiliations">
+    <span class="affiliation-block"><sup style="color: #111111 !important;">1</sup> University of Padova</span>
+    <span class="affiliation-block"><sup style="color: #111111 !important;">2</sup> Harbin Institute of Technology</span>
+  </div>
 
-## Citation
+  <div class="publication-venue">
+    NeurIPS 2026
+  </div>
 
-```bibtex
-@inproceedings{zhao2026rankalign,
+  <div class="publication-links">
+    <span class="link-block">
+      <a href="https://arxiv.org/pdf/2610.31145" target="_blank" class="button">
+        <i class="fa-solid fa-file-pdf"></i> Paper
+      </a>
+    </span>
+    <span class="link-block">
+      <a href="https://arxiv.org/abs/2610.31145" target="_blank" class="button">
+        <i class="fa-solid fa-graduation-cap"></i> arXiv
+      </a>
+    </span>
+    <span class="link-block">
+      <a href="https://github.com/zez356/RankAlign" target="_blank" class="button">
+        <i class="fa-brands fa-github"></i> Code
+      </a>
+    </span>
+  </div>
+
+  <div class="publication-teaser">
+    <img src="{{ site.baseurl }}/assets/img/rankalign/pipeline.png" alt="Pipeline Overview">
+    <figcaption>
+      <strong>Figure 1: Pipeline Overview.</strong> The pipeline maps image and text embeddings into rank-based similarity kernels, followed by permutation matching for cross-modal alignment without paired data.
+    </figcaption>
+  </div>
+
+  <hr class="publication-divider">
+
+  <h2 class="section-title">Abstract</h2>
+  <div class="abstract-content">
+While the Platonic Representation Hypothesis posits that vision and language models converge toward compatible latent geometries, recovering class-level correspondences between unpaired modalities without cross-modal supervision remains challenging.
+Existing relational matching methods compare within-modality similarity kernels directly, although the same semantic structure may be represented through different numerical parameterizations across modalities. We propose RankAlign, a rank-based normalization strategy for class-level unpaired vision-language matching. RankAlign transforms each within-modality similarity kernel into an ordinal relational representation before permutation matching, while leaving the correspondence space and matching solver unchanged. The resulting representation is invariant to strictly increasing reparameterizations of similarity values while preserving the ordinal structure used for matching. We provide exact-recovery and stability guarantees that characterize correspondence recovery under both exact and partial ordinal agreement. Experiments across diverse frozen vision and language encoders and multiple datasets demonstrate improved and more stable class-level correspondence recovery, including under label corruption and domain shift.
+  </div>
+
+  <hr class="publication-divider">
+  <h2 class="section-title">Overview</h2>
+  <div class="abstract-content">
+    <p>
+      <strong>RankAlign matches vision and language concepts without paired data by comparing the order of their similarities rather than their values.</strong>
+    </p>
+    <ul>
+      <li>A rank-based representation of similarity kernels that plugs into existing blind-matching objectives and QAP solvers without changing them.</li>
+      <li>Guarantees: invariance to monotone rescaling of similarities, exact recovery when both modalities agree on the order, and stability when they partially disagree.</li>
+      <li>More accurate and more stable matching across diverse frozen encoders on CIFAR-100, ImageNet-100, LAION and CheXpert, especially as the number of classes grows.</li>
+    </ul>
+  </div>
+
+  <hr class="publication-divider">
+  <h2 class="section-title">RankAlign</h2>
+  <div class="abstract-content">
+    <p>
+      Blind matching recovers the correspondence between \(N\) visual classes and \(N\) textual concepts by finding the permutation that best aligns their within-modality similarity kernels \(K_x\) and \(K_y\):
+    </p>
+    $$\pi^\star \in \arg\max_{\pi \in S_N} \sum_{i \neq j} K_x(i,j)\, K_y(\pi(i), \pi(j)).$$
+    <p>
+      This compares similarity values directly, although independently trained encoders need not share the same similarity scale: they may agree on which concept pairs are more similar while assigning them very different numbers.
+    </p>
+    <p>
+      RankAlign compares their order instead. Each off-diagonal similarity is replaced by its rank among the \(M = N(N-1)/2\) class pairs of the same modality:
+    </p>
+    $$R(K)(i,j) = \frac{1}{M} \sum_{k < l} \mathbb{1}\big[K(k,l) \le K(i,j)\big], \qquad i \neq j.$$
+    <p>
+      The same objective is then solved on \(\widetilde K_x = R(K_x)\) and \(\widetilde K_y = R(K_y)\), with any existing QAP solver. Since \(R(\phi \circ K) = R(K)\) for every strictly increasing \(\phi\), scale differences between the modalities disappear; when both modalities order the class pairs consistently, the ground-truth permutation is the unique optimum.
+    </p>
+  </div>
+
+  <hr class="publication-divider">
+  <h2 class="section-title">Results</h2>
+  <div class="abstract-content">
+    <p>
+      We report matching accuracy, the fraction of classes whose correspondence is correctly recovered, and compare against BlindMatch (Schnaus et al., CVPR 2025) under the same solver and matching instances. As the number of classes \(N\) grows, BlindMatch (dashed) quickly drops toward chance, while RankAlign (solid) stays far higher. At \(N = 100\), RankAlign keeps roughly 30–60% accuracy across backbones on CIFAR-100 and ImageNet-100.
+    </p>
+  </div>
+  <div class="ra-figure-row">
+    <img src="{{ site.baseurl }}/assets/img/rankalign/scaling_cifar100.png" alt="Matching accuracy vs problem size on CIFAR-100">
+    <img src="{{ site.baseurl }}/assets/img/rankalign/scaling_imagenet100.png" alt="Matching accuracy vs problem size on ImageNet-100">
+  </div>
+  <div class="ra-caption">
+    <strong>Figure 2:</strong> Matching accuracy vs. problem size on CIFAR-100 (left) and ImageNet-100 (right). Solid: RankAlign (RA). Dashed: BlindMatch with GW (BM).
+  </div>
+  <div class="abstract-content">
+    <p>
+      RankAlign also holds up under visual-side label corruption, on noisy LAION pseudo-classes, and under the strong domain shift of medical images (CheXpert), where BlindMatch reaches at most 10% accuracy on every backbone while RankAlign reaches up to 65%. Full results are in the paper.
+    </p>
+  </div>
+
+  <hr class="publication-divider">
+  <h2 class="section-title">Discussion</h2>
+  <div class="abstract-content">
+    <h3 class="ra-subtitle">Can RankAlign work without reliable class labels?</h3>
+    <p>
+      Not fully. RankAlign relies on class prototypes, so its performance degrades as label noise increases, particularly on ImageNet-100. A natural next step toward fully unsupervised alignment is to replace labeled classes with visual groups discovered through clustering.
+    </p>
+    <h3 class="ra-subtitle">How well does RankAlign scale?</h3>
+    <p>
+      The rank transformation is computationally inexpensive. The main bottleneck is the permutation solver, whose cost grows with the number of classes. Extending RankAlign to instance-level and open-vocabulary settings, and exploring hybrid methods that combine ordinal and magnitude information, are promising directions for future work.
+    </p>
+  </div>
+
+  <hr class="publication-divider">
+
+  <h2 class="section-title">Citation</h2>
+  <div class="bibtex-box">
+    <pre class="bibtex-code">@inproceedings{zhao2026rankalign,
   title={RankAlign: Vision-Language Representation Alignment via Rank Transformation},
   author={Zhao, Enzhe and Fiorucci, Marco and Ballan, Lamberto},
   booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
   year={2026}
-}
+}</pre>
+  </div>
+
+</div>
